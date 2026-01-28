@@ -10,6 +10,7 @@
     "build": "tsc",
     "start": "node lib/index.js",
     "cli": "npx ts-node src/cli.ts",
+    "api": "npx ts-node src/server.ts",
     "dev": "npx ts-node src/index.ts",
     "genkit:start": "npx genkit start -- npx ts-node src/index.ts",
     "genkit:dev": "npx genkit start --attach -- npx ts-node src/index.ts",
@@ -27,11 +28,15 @@
   "type": "commonjs",
   "dependencies": {
     "@genkit-ai/googleai": "^1.28.0",
+    "cors": "^2.8.6",
     "dotenv": "^16.3.1",
+    "express": "^5.2.1",
     "genkit": "^1.28.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^20.10.0",
     "genkit-cli": "^0.9.0",
     "ts-node": "^10.9.2",
