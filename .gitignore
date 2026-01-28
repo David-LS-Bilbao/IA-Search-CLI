@@ -1,0 +1,40 @@
+node_modules
+# Dependencias
+node_modules/
+*/node_modules/
+
+# Build output
+lib/
+dist/
+*.js.map
+
+# Variables de entorno (IMPORTANTE: contiene API keys)
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Genkit
+.genkit/
+
+# Temporal
+tmp/
+temp/

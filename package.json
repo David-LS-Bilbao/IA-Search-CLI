@@ -1,0 +1,40 @@
+{
+  "name": "perplexity-cli",
+  "version": "1.0.0",
+  "description": "CLI de búsqueda inteligente usando Firebase Genkit y Tavily",
+  "main": "lib/index.js",
+  "bin": {
+    "perplexity": "./lib/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/index.js",
+    "cli": "npx ts-node src/cli.ts",
+    "dev": "npx ts-node src/index.ts",
+    "genkit:start": "npx genkit start -- npx ts-node src/index.ts",
+    "genkit:dev": "npx genkit start --attach -- npx ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "genkit",
+    "ai",
+    "search",
+    "perplexity",
+    "tavily"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@genkit-ai/googleai": "^1.28.0",
+    "dotenv": "^16.3.1",
+    "genkit": "^1.28.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "genkit-cli": "^0.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  }
+}
