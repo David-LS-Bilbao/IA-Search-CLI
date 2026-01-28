@@ -50,4 +50,4 @@ Este proyecto requiere claves API para funcionar. Como medida de seguridad, el a
     TAVILY_API_KEY=tvly-TuClaveReal...
     ```
 
-> **Nota:** Nunca subas tu archivo `.env` con claves reales a GitHub.
+> **Nota:** Nunca subas tu archivo `.env` con claves reales a GitHub. 
